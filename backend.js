@@ -2,9 +2,11 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
+var logfmt = require('logfmt');
 
 //configuration
 app.use(logfmt.requestLogger());
+
 
 app.get('/', function(req, res){
 	res.send('Hello, World!');
