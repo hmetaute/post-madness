@@ -8,6 +8,10 @@ var logfmt = require('logfmt');
 app.use(logfmt.requestLogger());
 
 
+app.get('/saludo-laura', function(req, res){
+	res.send('<h1>Hola, Laura mi hermosa. Esto es lo que estoy haciendo haciendo. Pense que era mas facil que me entendieras si te mostraba! :* </h1>');
+    });
+
 app.get('/', function(req, res){
 	res.send('Hello, World!');
     });
